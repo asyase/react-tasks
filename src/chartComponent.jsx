@@ -9,7 +9,7 @@ const data = [
 ];
 
 const options = {
-  title: "Distribution of products",
+  title: "Distribution of products", 
   pieHole: 0.4, 
   is3D: false,  
 };
