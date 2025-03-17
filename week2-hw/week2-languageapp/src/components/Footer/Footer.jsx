@@ -1,7 +1,8 @@
-export default function Footer() {
-    return (
-        <footer>
-            <p>&copy;My website.2025. </p>
-        </footer>
-    );
-}
+import React from "react";
+import "./Footer.css";
+
+const Footer = () => {
+  return <footer className="footer">© 2025 Word Learning App</footer>;
+};
+
+export default Footer;

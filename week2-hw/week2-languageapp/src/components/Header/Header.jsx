@@ -1,14 +1,8 @@
-export default function Header() {
-    return (
-        <header>
-            <h1>header</h1>
-            <nav>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </nav>
-        </header>
-    );
-}
+import React from "react";
+import "./Header.css";  
+
+const Header = () => {
+  return <header className="header">Word Learning App</header>;
+};
+
+export default Header;
