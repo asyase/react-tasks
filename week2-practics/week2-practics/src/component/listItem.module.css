@@ -1,0 +1,40 @@
+/* List item container */
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox */
+.list-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Task label */
+.list-item label {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+
+/* Delete button */
+.button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: .75rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: darkred;
+}
