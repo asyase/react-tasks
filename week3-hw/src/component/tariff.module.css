@@ -4,6 +4,13 @@
     font-weight: bold;
 }
 
+.selected {
+    border: 3px solid #007bff;
+    background-color: #e6f0ff;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+    transform: scale(1.05);
+    z-index: 1;
+}
 
 .tariff {
     width: 200px;

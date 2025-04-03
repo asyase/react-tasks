@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Tariff from "./component/Tariff";
 import "./App.css";
 
 function App() {
+    const [selectedPrice, setSelectedPrice] = useState(null);
+
     const tariffs = [
         { title: "Unlimited 300", price: 300, speed: 10 },
         { title: "Unlimited 450", price: 450, speed: 50 },
@@ -20,9 +22,16 @@ function App() {
                         title={tariff.title} 
                         price={tariff.price} 
                         speed={tariff.speed}
+                        isSelected={selectedPrice === tariff.price}
+                        onSelect={() => setSelectedPrice(tariff.price)}
                     />
                 ))}
             </div>
+            {selectedPrice && (
+                <div className="selected-info">
+                    You selected: <strong>{selectedPrice} €/month</strong>
+                </div>
+            )}
         </div>
     );
 }
