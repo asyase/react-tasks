@@ -1,0 +1,181 @@
+@import "../styles/variables.css";
+
+/*  General Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-light);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*  Header */
+.header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--padding);
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+/*  Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--padding);
+  font-size: var(--font-size-small);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/*  Word Table */
+.word-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+/*  Table Header */
+.word-table th {
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: var(--padding);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*  Table Rows */
+.word-table td {
+  padding: var(--padding);
+  border-bottom: 1px solid var(--gray);
+}
+
+.word-table tr:nth-child(even) {
+  background-color: var(--background-light);
+}
+
+/*  Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  margin-left: 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed), transform var(--transition-speed), box-shadow var(--transition-speed);
+  font-size: var(--font-size-small);
+}
+
+
+
+/*  Edit Button */
+.edit-btn {
+  background: var(--secondary-color);
+  color: var(--white);
+}
+
+.edit-btn:hover {
+  background: var(--primary-color);
+}
+
+/*  Delete Button */
+.delete-btn {
+  background: var(--accent-color);
+  color: var(--white);
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+/*  Save & Cancel Buttons */
+.save-btn {
+  background: var(--success-color);
+  color: var(--white);
+}
+
+.cancel-btn {
+  background: var(--warning-color);
+  color: var(--white);
+}
+
+/*  Animations */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: var(--box-shadow);
+}
+button:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🟣 Hover Effect */
+button:hover {
+  transform: scale(var(--hover-scale));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔵 Focus Effect */
+button:focus {
+  outline: none;
+  box-shadow: var(--focus-shadow);
+}
+
+/* 🔴 Click (Active) Effect */
+button:active {
+  transform: scale(var(--active-scale));
+  box-shadow: none;
+}
+
+/*  Input Field Styling */
+input {
+  padding: 8px;
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+/* 🟢 Hover Effect on Input */
+input:hover {
+  border-color: var(--primary-color);
+}
+
+/* 🔵 Focus Effect on Input */
+input:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: var(--focus-shadow);
+}
+
+/*  Table Row Hover */
+.word-table tr:hover {
+  background-color: rgba(138, 43, 226, 0.1); /* Light purple highlight */
+  transition: background-color var(--transition-speed);
+}
+
+/*  Table Cell Animations */
+.word-table td {
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.word-table td:active {
+  transform: scale(var(--active-scale));
+}
